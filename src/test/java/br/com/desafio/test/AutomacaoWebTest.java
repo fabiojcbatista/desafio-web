@@ -7,7 +7,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import br.com.desafio.builder.AutomacaoWebPO;
+import br.com.desafio.pageObject.AutomacaoWebPO;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class AutomacaoWebTest extends BaseTest {

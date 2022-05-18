@@ -1,4 +1,4 @@
-package br.com.desafio.builder;
+package br.com.desafio.pageObject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
