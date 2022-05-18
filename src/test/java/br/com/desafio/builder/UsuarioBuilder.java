@@ -3,7 +3,7 @@ package br.com.desafio.builder;
 import br.com.desafio.pageObject.UsuarioPO;
 
 public class UsuarioBuilder {
- private String nome = "Fabiano";
+ private String nome = "Aane";
  private String ultimoNome = "Costa";
  private String email = "f.costa@gmail.com";
  private String endereco = "";

@@ -36,7 +36,10 @@ public class UsuarioPO extends BasePO {
  @FindBy(id = "user_age")
  public WebElement inputIdade;
 
- @FindBy(name = "user_commit")
+ @FindBy(id = "notice")
+ public WebElement mensagemSucesso;
+
+ @FindBy(name = "commit")
  public WebElement ButtonCriar;
 
  @FindBy(css = "a.btn.waves-light.red")
@@ -79,5 +82,9 @@ public class UsuarioPO extends BasePO {
 
   ButtonCriar.click();
 
+ }
+
+ public String obterMensagem() {
+  return mensagemSucesso.getText();
  }
 }
