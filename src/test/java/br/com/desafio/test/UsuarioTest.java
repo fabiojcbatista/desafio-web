@@ -240,7 +240,7 @@ public class UsuarioTest extends BaseTest {
 
   assertEquals(usuarioPage.obterUrl(), "https://automacaocombatista.herokuapp.com/users");
  }
- 
+
  @Test
  public void TC024_naoDeveSerPossivelCadastrarUmUsuarioComGeneroComNumeroEDemaisCamposValidos() {
   UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
@@ -250,7 +250,7 @@ public class UsuarioTest extends BaseTest {
 
   assertEquals(usuarioPage.obterUrl(), "https://automacaocombatista.herokuapp.com/users");
  }
- 
+
  @Test
  public void TC025_naoDeveSerPossivelCadastrarUmUsuarioComGeneroComCaracteresEspeciaisEDemaisCamposValidos() {
   UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
@@ -291,6 +291,84 @@ public class UsuarioTest extends BaseTest {
   assertEquals(usuarioPage.obterUrl(), "https://automacaocombatista.herokuapp.com/users");
  }
 
- 
+ @Test
+ public void TC029_deveSerPossivelCadastrarUmUsuarioComUniversidadeComStringEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarUniversidade("FMU")
+    .builder();
+
+  assertEquals(cadastroPage.obterMensagem(), "Usuário Criado com sucesso");
+ }
+
+ @Test
+ public void TC030_deveSerPossivelCadastrarUmUsuarioComProfissaoComStringEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarProfissao("Testador de Software")
+    .builder();
+
+  assertEquals(cadastroPage.obterMensagem(), "Usuário Criado com sucesso");
+ }
+
+ @Test
+ public void TC031_deveSerPossivelCadastrarUmUsuarioComGeneroComStringEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarGenero("Feminino")
+    .builder();
+
+  assertEquals(cadastroPage.obterMensagem(), "Usuário Criado com sucesso");
+ }
+
+ @Test
+ public void TC032_deveSerPossivelCadastrarUmUsuarioComIdadeComNumeroEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarIdade("25")
+    .builder();
+
+  assertEquals(cadastroPage.obterMensagem(), "Usuário Criado com sucesso");
+ }
+
+ @Test
+ public void TC033_naoDeveSerPossivelCadastrarUmUsuarioComEnderecoComNumeroEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarEndereco("99999")
+    .builder();
+
+  assertEquals(usuarioPage.obterUrl(), "https://automacaocombatista.herokuapp.com/users");
+ }
+
+ @Test
+ public void TC034_naoDeveSerPossivelCadastrarUmUsuarioComEnderecoComCaracteresEspeciaisEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarEndereco("Rua 2@s#")
+    .builder();
+
+  assertEquals(usuarioPage.obterUrl(), "https://automacaocombatista.herokuapp.com/users");
+ }
+
+ @Test
+ public void TC035_naoDeveSerPossivelCadastrarUmUsuarioComEnderecoComEspacoEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarEndereco(" ")
+    .builder();
+
+  assertEquals(usuarioPage.obterUrl(), "https://automacaocombatista.herokuapp.com/users");
+ }
+
+ @Test
+ public void TC036_deveSerPossivelCadastrarUmUsuarioComEnderecoValidoEDemaisCamposValidos() {
+  UsuarioBuilder usuario = new UsuarioBuilder(cadastroPage);
+  usuario
+    .adicionarEndereco("Rua Floriano Peixoto, 203")
+    .builder();
+
+  assertEquals(cadastroPage.obterMensagem(), "Usuário Criado com sucesso");
+ }
 
 }
