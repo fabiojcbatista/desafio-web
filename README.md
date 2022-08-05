@@ -27,6 +27,16 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Criar o Builder
 - [x] Criar os testes
 
+Refatoração do projeto
+
+- [ ] Organizar a estrutura de código.
+- [ ] Criar PageObject padronizada.
+- [ ] Criar Task padronizada.
+- [ ] Criar Tests Cases.
+- [ ] Criar Validation.
+- [ ] Criar Relatório de Testes.
+- [ ] Alterar o Driver para funcionar em qualquer navegador(Não dependência de tecnologia).
+
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
