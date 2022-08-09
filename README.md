@@ -29,7 +29,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Refatoração do projeto
 
-- [ ] Organizar a estrutura de código.
+- [x] Organizar a estrutura de código.
 - [ ] Criar PageObject padronizada.
 - [ ] Criar Task padronizada.
 - [ ] Criar Tests Cases.
