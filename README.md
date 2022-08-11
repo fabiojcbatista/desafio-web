@@ -41,7 +41,7 @@ Refatoração do projeto
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-- Instalação versão 101 do navegador `<Google Chrome>`
+- Instalação versão 101 do navegador `<Google Chrome>` / será removida essa dependência do navegador 
 - Uma máquina `<Windows>`. compatível na versão 10.
 - Java compatível com a versão 1.8.
 - IDE de desenvolvimento `<VS Code/Eclipse/Intellij Idea>`
