@@ -1,4 +1,4 @@
-package br.com.desafio-web.Framework.Browser;
+package desafio-web.Framework.Browser;
 
 import java.time.Duration;
 
