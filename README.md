@@ -23,7 +23,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Criar os casos de testes no google planilhas
 - [x] Criar a Base de Testes
-- [x] Criar o PageObject
 - [x] Criar o Builder
 - [x] Criar os testes
 
